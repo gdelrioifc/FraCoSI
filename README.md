@@ -6,4 +6,4 @@ This repository contains the data accompanying the work entitled: Prediction of 
 
 The repository contains Datasets and Codes used to generate the data reported in the referred publication.
 
-Please visit each subdirectory for further information about the contents.
+Please visit each subdirectory for further information about their contents.
