@@ -34,3 +34,6 @@ where <java_file> is the name of a java file.
 
 After executing the command, a new file should be created in the directory where you executed the javac command with the same name as <java_file>, but with .class extension.
 
+You may execute the java code typing at your console:
+
+java <java_file_without_extension>
