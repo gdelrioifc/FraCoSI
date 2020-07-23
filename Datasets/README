@@ -41,3 +41,10 @@ PDB_Bacteria_Ribosome.csv         The RCCs calculated for 54 mitochondrial human
 SelfInteractome_SARS-CoV-1.csv    The protein-protein interactions experimentally reported for SARS-CoV-1 at https://pubmed.ncbi.nlm.nih.gov/17520018/ 
 
 SelfInteractome_RibosomeMHS.csv   The protein-protein interactions reported at BioGrid for the proteins included in PDB_Human_Ribosome.csv
+
+DataForFigure1.csv                Data required to generate Figure 1.
+
+DataForFigure2.csv                Data required to generate Figure 2.
+
+DataForFigure3.csv                Data required to generate Figure 3.
+
