@@ -1,0 +1,36 @@
+This directory contains R scripts and Java codes used to generate the figures and data reported in the work entitled 
+
+"Prediction of coronaviruses transmissibility from self-interactome" by Gabriel Del Rio.
+
+For the R scripts, you need to have installed R (follow instructions from the developers web site: https://www.r-project.org) in your computer.
+
+It is also advisable to install R studio (follow instructions from the provider: https://rstudio.com/products/rstudio/download/).
+
+After installing R, the following packages need to be installed:
+
+1) ggplot2 (https://cran.r-project.org/web/packages/ggplot2/index.html)
+
+2) reshape (https://cran.r-project.org/web/packages/reshape/index.html)
+
+3) grid (https://cran.r-project.org/src/contrib/Archive/grid/)
+
+4) lattice (https://cran.r-project.org/web/packages/lattice/index.html)
+
+5) gridExtra (https://cran.r-project.org/web/packages/gridExtra/index.html)
+
+Please verify the versions available for for operating system.
+
+For the codes written in Java, the java compiler and java virtual machine are needed. 
+
+These come in a JDK bundle for different operating systems at: https://www.oracle.com/mx/java/technologies/javase/javase-jdk8-downloads.html.
+
+All the codes were tested in Java version 8 and they should work for that version and above. 
+
+For compiling any Java file (files with extension .java), type in your console:
+
+javac <java_file>
+
+where <java_file> is the name of a java file.
+
+After executing the command, a new file should be created in the directory where you executed the javac command with the same name as <java_file>, but with .class extension.
+
