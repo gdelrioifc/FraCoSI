@@ -44,7 +44,17 @@ SelfInteractome_RibosomeMHS.csv   The protein-protein interactions reported at B
 
 DataForFigure1.csv                Data required to generate Figure 1.
 
-DataForFigure2.csv                Data required to generate Figure 2.
+DataForFigure2LatD6Concat.csv     Data required to generate Figure 2.
+
+DataForFigure2LatD6Sum.csv        Data required to generate Figure 2.
+
+DataForFigure2LatD7Concat1.csv    Data required to generate Figure 2.
+
+DataForFigure2LatD7Concat2.csv    Data required to generate Figure 2.
+
+DataForFigure2LatD7Concat3.csv    Data required to generate Figure 2.
+
+DataForFigure2NoLatD8Concat.csv   Data required to generate Figure 2.
 
 DataForFigure3.csv                Data required to generate Figure 3.
 
