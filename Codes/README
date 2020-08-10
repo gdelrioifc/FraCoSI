@@ -1,6 +1,6 @@
 This directory contains R scripts and Java codes used to generate the figures and data reported in the work entitled 
 
-"Prediction of coronaviruses transmissibility from self-interactome" by Gabriel Del Rio.
+"Predicted CoronaViruses Self-Interactome Completeness Correlates Inversely with their Transmissibility" by Gabriel Del Rio.
 
 For the R scripts, you need to have installed R (follow instructions from the developers web site: https://www.r-project.org) in your computer.
 
@@ -18,7 +18,7 @@ After installing R, the following packages need to be installed:
 
 5) gridExtra (https://cran.r-project.org/web/packages/gridExtra/index.html)
 
-Please verify the versions available for for operating system.
+Please verify the versions available for your operating system.
 
 For the codes written in Java, the java compiler and java virtual machine are needed. 
 
