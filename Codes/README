@@ -20,20 +20,13 @@ After installing R, the following packages need to be installed:
 
 Please verify the versions available for your operating system.
 
-For the codes written in Java, the java compiler and java virtual machine are needed. 
 
-These come in a JDK bundle for different operating systems at: https://www.oracle.com/mx/java/technologies/javase/javase-jdk8-downloads.html.
+
+For the scripts to execute Weka, you need to have installed the java virtual machine and the Weka application. Follow the instructions from the providers. 
+
+Java comes in a JDK bundle for different operating systems at: https://www.oracle.com/mx/java/technologies/javase/javase-jdk8-downloads.html.
 
 All the codes were tested in Java version 8 and they should work for that version and above. 
 
-For compiling any Java file (files with extension .java), type in your console:
 
-javac <java_file>
-
-where <java_file> is the name of a java file.
-
-After executing the command, a new file should be created in the directory where you executed the javac command with the same name as <java_file>, but with .class extension.
-
-You may execute the java code typing at your console:
-
-java <java_file_without_extension>
+Weka is avaiable at https://www.cs.waikato.ac.nz/ml/weka/ and is available for the most commonoperating systems that support Java.
