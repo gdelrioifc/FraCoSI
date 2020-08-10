@@ -29,4 +29,32 @@ Java comes in a JDK bundle for different operating systems at: https://www.oracl
 All the codes were tested in Java version 8 and they should work for that version and above. 
 
 
-Weka is avaiable at https://www.cs.waikato.ac.nz/ml/weka/ and is available for the most commonoperating systems that support Java.
+Weka is avaiable at https://www.cs.waikato.ac.nz/ml/weka/ and is available for the most commonoperating systems that support Java. You need to set your classpath to include the jar files required to execute Weka and Auto-Weka.
+
+We include here the algorithms used to predict PPI for every viral protein included in this study. Here is the name of the files followed by a brief description.
+
+Algorithm File Name           Description
+LatD6Concat.model             This algorithm is aimed to be used with ARFF files with extension "LatD6Concat.arff"
+
+LatD6Sum.model                This algorithm is aimed to be used with ARFF files with extension "LatD6Sum.arff"
+
+LatD7Concat1.model            This algorithm is aimed to be used with ARFF files with extension "LatD7Concat1.arff"
+
+LatD7Concat2.model            This algorithm is aimed to be used with ARFF files with extension "LatD7Concat2.arff"
+
+LatD7Concat3.model            This algorithm is aimed to be used with ARFF files with extension "LatD7Concat3.arff"
+
+NoLatD8Concat.model           This algorithm is aimed to be used with ARFF files with extension "NoLatD8Concat.arff"
+
+
+An example on how to use this models to generate a set of statisitical parameters is provided below:
+
+java -Xmx20G weka.classifiers.meta.AutoWEKAClassifier -T [path to arff file] -l [path to model] -toggle "TP rate, FP rate,Precision,Recall,F-measure,MCC,ROC area,PRC area"
+
+If you want to get the list of PPIs, you use this command:
+
+java -Xmx20G weka.classifiers.meta.AutoWEKAClassifier -T [arff file] -l [model] -p 0
+
+For this to execute properly, you need to set the classpath to include the weka and auto-weka jar files. 
+
+The flag -Xmx20G specifies the maximum amount of RAM that the JVM will use to execute the command. This is only provided as an example; you may want to test with different values depending on your computer.
