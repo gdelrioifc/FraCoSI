@@ -47,7 +47,7 @@ LatD7Concat3.model            This algorithm is aimed to be used with ARFF files
 NoLatD8Concat.model           This algorithm is aimed to be used with ARFF files with extension "NoLatD8Concat.arff"
 
 
-An example on how to use this models to generate a set of statisitical parameters is provided below:
+An example on how to use any of these models to generate a set of statisitical parameters is provided below:
 
 java -Xmx20G weka.classifiers.meta.AutoWEKAClassifier -T [path to arff file] -l [path to model] -toggle "TP rate, FP rate,Precision,Recall,F-measure,MCC,ROC area,PRC area"
 
@@ -55,6 +55,6 @@ If you want to get the list of PPIs, you use this command:
 
 java -Xmx20G weka.classifiers.meta.AutoWEKAClassifier -T [arff file] -l [model] -p 0
 
-For this to execute properly, you need to set the classpath to include the weka and auto-weka jar files. 
+For this to execute properly, you need to set the classpath to include the weka and auto-weka jar files. Note that the ARFF files are provided in the DataSets directory.
 
 The flag -Xmx20G specifies the maximum amount of RAM that the JVM will use to execute the command. This is only provided as an example; you may want to test with different values depending on your computer.
