@@ -4,57 +4,41 @@ This directory contains datasets used to generate the figures and data reported 
 
 Here we provide a brief description about the contents of each file.
 
-File name                         Description
+File name                                 Description
 
-PDB_SARS-CoV-1.arff               The RCCs calculated for 5 SARS-CoV-1 proteins (PDB entries 2JW8, 3BGF, 3SN8, 3SNA and 5NFY) in ARFF format.
+PDB_SARS-CoV-1_{Model}.arff               The RCCs calculated for 5 SARS-CoV-1 proteins (PDB entries 2JW8, 3BGF, 3SN8, 3SNA and 5NFY) in ARFF format.
 
-PDB_SARS-CoV-1.csv                The RCCs calculated for 5 SARS-CoV-1 proteins (PDB entries 2JW8, 3BGF, 3SN8, 3SNA and 5NFY) in CSV format.
+PDB-SARS-CoV-2_{Model}.arff               The RCCs calculated for 6 SARS-CoV-2 proteins (PDB entries 5R7Y, 6LVN, 6VYO, 6W37, 6XDC and 6Z4U) in ARFF format.
 
-PDB-SARS-CoV-2.arff               The RCCs calculated for 6 SARS-CoV-2 proteins (PDB entries 5R7Y, 6LVN, 6VYO, 6W37, 6XDC and 6Z4U) in ARFF format.
+CommonSwPDB_SARS-CoV-2_{Model}.arff       The RCCs calculated for 6 SARS-CoV-2 proteins (3CL-Pro, Spike, NC, Protein3a, Protein7a and ORF9b) in ARFF format.
 
-PDB-SARS-CoV-2.csv                The RCCs calculated for 6 SARS-CoV-2 proteins (PDB entries 5R7Y, 6LVN, 6VYO, 6W37, 6XDC and 6Z4U) in CSV format.
+SwM_SARS-CoV-1_{Model}.arff               The RCCs calculated for 18 SARS-CoV-1 proteins available as high quality models at SwissModel repository in ARFF format.
 
-CommonSwPDB_SARS-CoV-2.arff       The RCCs calculated for 6 SARS-CoV-2 proteins (3CL-Pro, Spike, NC, Protein3a, Protein7a and ORF9b) in ARFF format.
+SwM_SARS-CoV-2_{Model}.arff               The RCCs calculated for 18 SARS-CoV-2 proteins available as high quality models at SwissModel repository in ARFF format.
 
-CommonSwPDB_SARS-CoV-2.csv        The RCCs calculated for 6 SARS-CoV-2 proteins (3CL-Pro, Spike, NC, Protein3a, Protein7a and ORF9b) in CSV format.
+SwM_MERS-CoV_{Model}.arff                 The RCCs calculated for 10 MERS-CoV proteins available as high quality models at SwissModel repository in ARFF format.
 
-SwM_SARS-CoV-1.arff               The RCCs calculated for 18 SARS-CoV-1 proteins available as high quality models at SwissModel repository in ARFF format.
+PDB_Human_Ribosome_{Model}.arff           The RCCs calculated for 54 mitochondrial human ribosome proteins (PDB entry 5OOL) in ARFF format.
 
-SwM_SARS-CoV-1.csv                The RCCs calculated for 18 SARS-CoV-1 proteins available as high quality models at SwissModel repository in CSV format.
+PDB_Bacteria_Ribosome_{Model}.arff        The RCCs calculated for 54 Thermus thermophilus ribosome proteins (PDB entry 1JGQ) in ARFF format.
 
-SwM_SARS-CoV-2.arff               The RCCs calculated for 18 SARS-CoV-2 proteins available as high quality models at SwissModel repository in ARFF format.
+SelfInteractome_SARS-CoV-1.csv            The protein-protein interactions experimentally reported for SARS-CoV-1 at https://pubmed.ncbi.nlm.nih.gov/17520018/ 
 
-SwM_SARS-CoV-2.csv                The RCCs calculated for 18 SARS-CoV-2 proteins available as high quality models at SwissModel repository in CSV format.
+SelfInteractome_RibosomeMHS.csv           The protein-protein interactions reported at BioGrid for the proteins included in PDB_Human_Ribosome.csv
 
-SwM_MERS-CoV.arff                 The RCCs calculated for 10 MERS-CoV proteins available as high quality models at SwissModel repository in ARFF format.
+DataForFigure1.csv                        Data required to generate Figure 1.
 
-SwM_MERS-CoV.csv                  The RCCs calculated for 10 SARS-CoV proteins available as high quality models at SwissModel repository in CSV format.
+DataForFigure2LatD6Concat.csv             Data required to generate Figure 2.
 
-PDB_Human_Ribosome.arff           The RCCs calculated for 54 mitochondrial human ribosome proteins (PDB entry 5OOL) in ARFF format.
+DataForFigure2LatD6Sum.csv                Data required to generate Figure 2.
 
-PDB_Human_Ribosome.csv            The RCCs calculated for 54 mitochondrial human ribosome proteins (PDB entry 5OOL) in CSV format.
+DataForFigure2LatD7Concat1.csv            Data required to generate Figure 2.
 
-PDB_Bacteria_Ribosome.arff        The RCCs calculated for 54 Thermus thermophilus ribosome proteins (PDB entry 1JGQ) in ARFF format.
+DataForFigure2LatD7Concat2.csv            Data required to generate Figure 2.
 
-PDB_Bacteria_Ribosome.csv         The RCCs calculated for 54 mitochondrial human ribosome proteins (PDB entry 1JGQ) in CSV format.
+DataForFigure2LatD7Concat3.csv            Data required to generate Figure 2.
 
-SelfInteractome_SARS-CoV-1.csv    The protein-protein interactions experimentally reported for SARS-CoV-1 at https://pubmed.ncbi.nlm.nih.gov/17520018/ 
+DataForFigure2NoLatD8Concat.csv           Data required to generate Figure 2.
 
-SelfInteractome_RibosomeMHS.csv   The protein-protein interactions reported at BioGrid for the proteins included in PDB_Human_Ribosome.csv
-
-DataForFigure1.csv                Data required to generate Figure 1.
-
-DataForFigure2LatD6Concat.csv     Data required to generate Figure 2.
-
-DataForFigure2LatD6Sum.csv        Data required to generate Figure 2.
-
-DataForFigure2LatD7Concat1.csv    Data required to generate Figure 2.
-
-DataForFigure2LatD7Concat2.csv    Data required to generate Figure 2.
-
-DataForFigure2LatD7Concat3.csv    Data required to generate Figure 2.
-
-DataForFigure2NoLatD8Concat.csv   Data required to generate Figure 2.
-
-DataForFigure3.csv                Data required to generate Figure 3.
+DataForFigure3.csv                        Data required to generate Figure 3.
 
