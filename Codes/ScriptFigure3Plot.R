@@ -1,16 +1,16 @@
+library(ggplot2)
+library(reshape)
 library(grid)
 library(lattice)
 library(gridExtra)
-library(ggplot2)
 
 setwd("<PathToYourLocalData>")
 
-data=read.csv("DataForFigure3.csv",check.names = FALSE, head=TRUE)
+data1=read.delim("DataForFigure1.csv",head=TRUE, sep=",")
+data1.long <- melt(data1, id="R0",measure=c("FRACOSI"))
+data1$shape <- as.factor(data1$shape)
+p1 <- ggplot(data1.long,aes(x=R0, value)) + ylim(85,100) + geom_point(size=5, aes(shape=data1$shape), color="black") + geom_smooth(method=lm,  linetype="dashed",color="darkred", fill="blue", level=0.95) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background=element_rect(fill='white', colour='black'),legend.position="none", plot.title = element_text(hjust=0.5), axis.title.x = element_blank(), axis.title.y = element_blank()) + ggtitle("")
 
-p <- ggplot() + geom_point(aes(x=data$Index[1:6], y=data$FEPPI[1:6], shape=factor(data$ModelGroup[1:6])), size=5, colour="red") + scale_x_discrete(limits=c("1","2","3","4","5","6"))
-p <- p + geom_point(aes(x=data$Index[7:12], y=data$FEPPI[7:12], shape=factor(data$ModelGroup[7:12])), size=5, colour="blue") + scale_x_discrete(limits=c("1","2","3","4","5","6","7","8","9","10","11","12"))
-
-p <- p + ylab("FEPPI") + xlab("ML algorithm")
-p <- p + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background=element_rect(fill='white', colour='black'),legend.position="none",plot.title = element_blank(), axis.text.x=element_text(size=15),axis.text.y = element_text(size=15), axis.title.x=element_text(size=28, face="bold"),axis.title.y=element_text(size=28,face="bold"))
-
-p
+title1=textGrob("FraCoSI",gp=gpar(fontsize=28,fontface="bold"),rot=90)
+title2=textGrob("R0",gp=gpar(fontsize=28,fontface="bold"),rot=0)
+grid.arrange(p1,ncol=1,left=title1, bottom=title2)
