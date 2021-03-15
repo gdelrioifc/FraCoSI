@@ -1,0 +1,13 @@
+Index,Model,ModelGroup,FRACOSI
+1,LatD6Concat,1,99.9
+2,LatD6Sum,1,100.0
+3,LatD7Concat1,1,100.0
+4,LatD7Concat2,1,100.0
+5,LatD7Concat3,1,100.0
+6,NoLatD8Concat,1,99.9
+7,LatD6Concat,2,90.08
+8,LatD6Sum,2,99.45
+9,LatD7Concat1,2,99.86
+10,LatD7Concat2,2,100.0
+11,LatD7Concat3,2,99.89
+12,NoLatD8Concat,2,89.02
